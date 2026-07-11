@@ -206,7 +206,7 @@ function App() {
             id="sample-btn-1"
             type="button" 
             className="sample-btn"
-            onClick={() => handleSampleClick('NE-12-34-56-W4')}
+            onClick={() => handleSampleClick('NE-09-56-18-W4')}
             disabled={loading}
           >
             NE-12-34-56-W4
@@ -215,7 +215,7 @@ function App() {
             id="sample-btn-2"
             type="button" 
             className="sample-btn"
-            onClick={() => handleSampleClick('sw 1 2 3 w 3')}
+            onClick={() => handleSampleClick('sw 9 55 19 w 4')}
             disabled={loading}
           >
             SW 1 2 3 w 3
@@ -229,7 +229,7 @@ function App() {
             <div className="card-icon error-icon">✕</div>
             <h3 className="error-title">{searchError}</h3>
             <p className="error-text">
-              Please double check the format or ensure the land description exists in the CSV data file.
+              Please double check the format. The database contains a subset of AB, SK and MB.
             </p>
           </div>
         )}
@@ -319,7 +319,7 @@ function App() {
       </section>
       
       <footer className="app-footer">
-        <p>CSV Database: <code>land_data.csv</code> with {landData.length} records</p>
+        <p>Database: contains {landData.length} records</p>
       </footer>
     </main>
   )
